@@ -5,7 +5,7 @@ import WeatherInfo from "./WeatherInfo";
 const Weather = ({ country }) => {
     const [capital, setCapital] = useState('')
 
-    const key = "500350d245ddc187c3e75966d7d74a9c";
+    const key = "";
     useEffect(() => {
         axios
             .get(`http://api.openweathermap.org/geo/1.0/direct?q=${country.capital}&appid=${key}`)
